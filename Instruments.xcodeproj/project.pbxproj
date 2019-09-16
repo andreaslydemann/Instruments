@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8E321D7A233011DF00735D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D79233011DF00735D67 /* AppDelegate.swift */; };
-		8E321D7C233011DF00735D67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D7B233011DF00735D67 /* ViewController.swift */; };
 		8E321D7F233011DF00735D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E321D7D233011DF00735D67 /* Main.storyboard */; };
 		8E321D81233011E200735D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E321D80233011E200735D67 /* Assets.xcassets */; };
 		8E321D84233011E200735D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E321D82233011E200735D67 /* LaunchScreen.storyboard */; };
 		8E321D8F233011E200735D67 /* InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D8E233011E200735D67 /* InstrumentsTests.swift */; };
+		8E321D9B2330136500735D67 /* InstrumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D9A2330136500735D67 /* InstrumentListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		8E321D76233011DF00735D67 /* Instruments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instruments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E321D79233011DF00735D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E321D7B233011DF00735D67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E321D7E233011DF00735D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E321D80233011E200735D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E321D83233011E200735D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		8E321D8A233011E200735D67 /* InstrumentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstrumentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E321D8E233011E200735D67 /* InstrumentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsTests.swift; sourceTree = "<group>"; };
 		8E321D90233011E200735D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E321D9A2330136500735D67 /* InstrumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		8E321D78233011DF00735D67 /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
+				8E321D992330131800735D67 /* Controller */,
 				8E321D79233011DF00735D67 /* AppDelegate.swift */,
-				8E321D7B233011DF00735D67 /* ViewController.swift */,
 				8E321D7D233011DF00735D67 /* Main.storyboard */,
 				8E321D80233011E200735D67 /* Assets.xcassets */,
 				8E321D82233011E200735D67 /* LaunchScreen.storyboard */,
@@ -94,6 +94,14 @@
 				8E321D90233011E200735D67 /* Info.plist */,
 			);
 			path = InstrumentsTests;
+			sourceTree = "<group>";
+		};
+		8E321D992330131800735D67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E321D9A2330136500735D67 /* InstrumentListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E321D7C233011DF00735D67 /* ViewController.swift in Sources */,
 				8E321D7A233011DF00735D67 /* AppDelegate.swift in Sources */,
+				8E321D9B2330136500735D67 /* InstrumentListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
