@@ -13,6 +13,16 @@
 		8E321D84233011E200735D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E321D82233011E200735D67 /* LaunchScreen.storyboard */; };
 		8E321D8F233011E200735D67 /* InstrumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D8E233011E200735D67 /* InstrumentsTests.swift */; };
 		8E321D9B2330136500735D67 /* InstrumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321D9A2330136500735D67 /* InstrumentListViewController.swift */; };
+		8E321DA2233018D400735D67 /* InstrumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DA1233018D400735D67 /* InstrumentCell.swift */; };
+		8E321DA5233019C200735D67 /* MultiPaneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DA4233019C200735D67 /* MultiPaneLayout.swift */; };
+		8E321DA6233019C200735D67 /* MultiPaneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DA4233019C200735D67 /* MultiPaneLayout.swift */; };
+		8E321DA923301A7100735D67 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DA823301A7100735D67 /* Layout.swift */; };
+		8E321DAA23301A7100735D67 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DA823301A7100735D67 /* Layout.swift */; };
+		8E321DAC23301C7300735D67 /* CascadingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DAB23301C7300735D67 /* CascadingLayout.swift */; };
+		8E321DAE23301FE400735D67 /* DecoratingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DAD23301FE400735D67 /* DecoratingLayout.swift */; };
+		8E321DAF23301FE400735D67 /* DecoratingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DAD23301FE400735D67 /* DecoratingLayout.swift */; };
+		8E321DB12330214000735D67 /* InsetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB02330214000735D67 /* InsetLayout.swift */; };
+		8E321DB22330214000735D67 /* InsetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB02330214000735D67 /* InsetLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,12 @@
 		8E321D8E233011E200735D67 /* InstrumentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsTests.swift; sourceTree = "<group>"; };
 		8E321D90233011E200735D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E321D9A2330136500735D67 /* InstrumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentListViewController.swift; sourceTree = "<group>"; };
+		8E321DA1233018D400735D67 /* InstrumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentCell.swift; sourceTree = "<group>"; };
+		8E321DA4233019C200735D67 /* MultiPaneLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPaneLayout.swift; sourceTree = "<group>"; };
+		8E321DA823301A7100735D67 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		8E321DAB23301C7300735D67 /* CascadingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingLayout.swift; sourceTree = "<group>"; };
+		8E321DAD23301FE400735D67 /* DecoratingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratingLayout.swift; sourceTree = "<group>"; };
+		8E321DB02330214000735D67 /* InsetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 		8E321D78233011DF00735D67 /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
+				8E321D9C2330180600735D67 /* View */,
 				8E321D992330131800735D67 /* Controller */,
 				8E321D79233011DF00735D67 /* AppDelegate.swift */,
 				8E321D7D233011DF00735D67 /* Main.storyboard */,
@@ -102,6 +119,43 @@
 				8E321D9A2330136500735D67 /* InstrumentListViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E321D9C2330180600735D67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E321DA3233019A300735D67 /* Layout */,
+				8E321D9D2330181A00735D67 /* Table View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E321D9D2330181A00735D67 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				8E321DA1233018D400735D67 /* InstrumentCell.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		8E321DA3233019A300735D67 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8E321DA823301A7100735D67 /* Layout.swift */,
+				8E321DA7233019D400735D67 /* Shared */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		8E321DA7233019D400735D67 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8E321DB02330214000735D67 /* InsetLayout.swift */,
+				8E321DAB23301C7300735D67 /* CascadingLayout.swift */,
+				8E321DAD23301FE400735D67 /* DecoratingLayout.swift */,
+				8E321DA4233019C200735D67 /* MultiPaneLayout.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E321DA2233018D400735D67 /* InstrumentCell.swift in Sources */,
+				8E321DA5233019C200735D67 /* MultiPaneLayout.swift in Sources */,
+				8E321DAE23301FE400735D67 /* DecoratingLayout.swift in Sources */,
+				8E321DA923301A7100735D67 /* Layout.swift in Sources */,
 				8E321D7A233011DF00735D67 /* AppDelegate.swift in Sources */,
+				8E321DB12330214000735D67 /* InsetLayout.swift in Sources */,
 				8E321D9B2330136500735D67 /* InstrumentListViewController.swift in Sources */,
+				8E321DAC23301C7300735D67 /* CascadingLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E321D8F233011E200735D67 /* InstrumentsTests.swift in Sources */,
+				8E321DA6233019C200735D67 /* MultiPaneLayout.swift in Sources */,
+				8E321DAA23301A7100735D67 /* Layout.swift in Sources */,
+				8E321DB22330214000735D67 /* InsetLayout.swift in Sources */,
+				8E321DAF23301FE400735D67 /* DecoratingLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

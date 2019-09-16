@@ -9,5 +9,7 @@
 import UIKit
 
 class InstrumentListViewController: UITableViewController {
-    
+    override func viewDidLoad() {
+        
+    }
 }
