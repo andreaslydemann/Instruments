@@ -10,6 +10,10 @@ import UIKit
 
 class InstrumentCell: UITableViewCell {
     
+    static let reuseIdentifier = "\(InstrumentCell.self)"
+    
+    var content = UILabel()
+    var accessories = [UIImageView]()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -22,6 +26,16 @@ class InstrumentCell: UITableViewCell {
     }
     
     private func addSubviews() {
+        let multiPaneLayout = MultiPaneLayout(content: content, accessories: accessories)
+        for view in multiPaneLayout.contents {
+            contentView.addSubview(view)
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
+        var multiPaneLayout = MultiPaneLayout(content: content, accessories: accessories)
+        multiPaneLayout.layout(in: contentView.bounds)
     }
 }

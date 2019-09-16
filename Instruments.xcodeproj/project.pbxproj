@@ -23,6 +23,8 @@
 		8E321DAF23301FE400735D67 /* DecoratingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DAD23301FE400735D67 /* DecoratingLayout.swift */; };
 		8E321DB12330214000735D67 /* InsetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB02330214000735D67 /* InsetLayout.swift */; };
 		8E321DB22330214000735D67 /* InsetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB02330214000735D67 /* InsetLayout.swift */; };
+		8E321DB52330276A00735D67 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB42330276A00735D67 /* UIView+Layout.swift */; };
+		8E321DB62330276A00735D67 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E321DB42330276A00735D67 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		8E321DAB23301C7300735D67 /* CascadingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CascadingLayout.swift; sourceTree = "<group>"; };
 		8E321DAD23301FE400735D67 /* DecoratingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratingLayout.swift; sourceTree = "<group>"; };
 		8E321DB02330214000735D67 /* InsetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLayout.swift; sourceTree = "<group>"; };
+		8E321DB42330276A00735D67 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,7 @@
 		8E321DA3233019A300735D67 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				8E321DB32330273E00735D67 /* Leaves */,
 				8E321DA823301A7100735D67 /* Layout.swift */,
 				8E321DA7233019D400735D67 /* Shared */,
 			);
@@ -156,6 +160,14 @@
 				8E321DA4233019C200735D67 /* MultiPaneLayout.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		8E321DB32330273E00735D67 /* Leaves */ = {
+			isa = PBXGroup;
+			children = (
+				8E321DB42330276A00735D67 /* UIView+Layout.swift */,
+			);
+			path = Leaves;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +276,7 @@
 				8E321DAE23301FE400735D67 /* DecoratingLayout.swift in Sources */,
 				8E321DA923301A7100735D67 /* Layout.swift in Sources */,
 				8E321D7A233011DF00735D67 /* AppDelegate.swift in Sources */,
+				8E321DB52330276A00735D67 /* UIView+Layout.swift in Sources */,
 				8E321DB12330214000735D67 /* InsetLayout.swift in Sources */,
 				8E321D9B2330136500735D67 /* InstrumentListViewController.swift in Sources */,
 				8E321DAC23301C7300735D67 /* CascadingLayout.swift in Sources */,
@@ -276,6 +289,7 @@
 			files = (
 				8E321D8F233011E200735D67 /* InstrumentsTests.swift in Sources */,
 				8E321DA6233019C200735D67 /* MultiPaneLayout.swift in Sources */,
+				8E321DB62330276A00735D67 /* UIView+Layout.swift in Sources */,
 				8E321DAA23301A7100735D67 /* Layout.swift in Sources */,
 				8E321DB22330214000735D67 /* InsetLayout.swift in Sources */,
 				8E321DAF23301FE400735D67 /* DecoratingLayout.swift in Sources */,
