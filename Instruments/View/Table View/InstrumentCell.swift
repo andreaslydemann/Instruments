@@ -15,6 +15,12 @@ class InstrumentCell: UITableViewCell {
     var content = UILabel()
     var accessories = [UIImageView]()
     
+    var instrument: Instrument! {
+        didSet {
+            
+        }
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
