@@ -17,7 +17,17 @@ class InstrumentCell: UITableViewCell {
     
     var instrument: Instrument! {
         didSet {
-            
+            accessories = (0..<instrument.numberOfInstruments).map { _ in
+                let imageView = UIImageView(image: instrument.instrumentOption.image)
+                imageView.contentMode = .scaleAspectFit
+                return imageView
+            }
+            content.text = instrument.description
+            for subview in contentView.subviews {
+                subview.removeFromSuperview()
+            }
+            addSubviews()
+            setNeedsLayout()
         }
     }
     
